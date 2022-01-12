@@ -15,7 +15,7 @@
     <ItemGroup>
         <OpenApiReference Include="open-api.json">
             <CodeGenerator>NSwagCSharp</CodeGenerator>
-            <Namespace>VicAiInvoiceTransfer.VicAiClient.Internal</Namespace>
+            <Namespace>OpenApiTesting</Namespace>
             <ClassName>VicAiInternalClient</ClassName>
             <OutputPath>../VicAiInternalClient.g.cs</OutputPath>
             <Options>/RequiredPropertiesMustBeDefined:true /GenerateOptionalPropertiesAsNullable:true</Options>
