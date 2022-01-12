@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <OpenApiReference Include="open-api.json">
+            <CodeGenerator>NSwagCSharp</CodeGenerator>
+            <Namespace>VicAiInvoiceTransfer.VicAiClient.Internal</Namespace>
+            <ClassName>VicAiInternalClient</ClassName>
+            <OutputPath>VicAiInternalClient.g.cs</OutputPath>
+            <Options>/RequiredPropertiesMustBeDefined:true /GenerateOptionalPropertiesAsNullable:true</Options>
+        </OpenApiReference>
+    </ItemGroup>
+
+</Project>
