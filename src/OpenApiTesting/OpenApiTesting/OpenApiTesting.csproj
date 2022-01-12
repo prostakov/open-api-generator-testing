@@ -3,13 +3,21 @@
     <PropertyGroup>
         <TargetFramework>net5.0</TargetFramework>
     </PropertyGroup>
+    
+    <ItemGroup>
+        <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
+        <PackageReference Include="NSwag.ApiDescription.Client" Version="13.13.2">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+    </ItemGroup>
 
     <ItemGroup>
         <OpenApiReference Include="open-api.json">
             <CodeGenerator>NSwagCSharp</CodeGenerator>
             <Namespace>VicAiInvoiceTransfer.VicAiClient.Internal</Namespace>
             <ClassName>VicAiInternalClient</ClassName>
-            <OutputPath>VicAiInternalClient.g.cs</OutputPath>
+            <OutputPath>../VicAiInternalClient.g.cs</OutputPath>
             <Options>/RequiredPropertiesMustBeDefined:true /GenerateOptionalPropertiesAsNullable:true</Options>
         </OpenApiReference>
     </ItemGroup>
